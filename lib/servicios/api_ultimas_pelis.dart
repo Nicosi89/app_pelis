@@ -13,10 +13,10 @@ class ApiNovedadesPelis {
       http.get(uri);
 
       if (response.statusCode == 200){
-        print('Esta es la respuesta ${response.body}');
+        //print('Esta es la respuesta ${response.body}');
         return response.body;
       } else {
-        print(response);
+        //print(response);
         throw Exception('No se ha recibido la respuesta con éxito');
 
       }

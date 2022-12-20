@@ -1,3 +1,4 @@
+import 'package:app_pelis/UI/tema/tema.dart';
 import 'package:app_pelis/controllers/controller_descubre_pelis.dart';
 import 'package:app_pelis/pantallas/HomeScreen.dart';
 import 'package:flutter/material.dart';
@@ -15,10 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Movies App',
-      theme: ThemeData(
-
-        primarySwatch: Colors.blue,
-      ),
+      theme: Tema.themeClaro,
+        //darkTheme: Tema.themeOscuro,
       home: Scaffold(
         body: HomeScreen(controllerNovedadesPelis: controllerNovedades),
       )
